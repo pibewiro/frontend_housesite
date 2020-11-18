@@ -1,0 +1,29 @@
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    padding: 20px;
+}
+
+.location-map{
+    width:50%;
+    height: 100%;
+    background: var(--lightGray);
+}
+
+.location-houses{
+    width:50%;
+    height: 100%;
+    background-color: red;
+}
+
+@media(max-width:1000px){
+    .location{
+        display: block;
+    }
+
+    .location-map, .location-houses{
+        width:100%;
+    }
+}

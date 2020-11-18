@@ -1,0 +1,137 @@
+.site-navbar {
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+.site-navbar {
+  padding: 0 40px;
+}
+
+.site-navbar a{
+  color: #fff;
+}
+
+.site-navbar ul {
+  display: flex;
+  list-style: none;
+  transition: all 500ms ease-in-out;
+}
+
+.sn-items a {
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+  color: #fff;
+}
+
+.site-navbar ul li {
+  position: relative;
+}
+
+.nav-underline {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1px;
+  background: #fff;
+}
+
+.sn-items a:hover ~ .nav-underline {
+  display: block;
+}
+
+.nav-selected{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1px;
+    background: #fff;
+}
+.ham-div{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.ham-div span{
+  padding: 1px;
+  width: 31px;
+  height: 1px;
+  background-color: #fff;
+  position: relative;
+}
+
+.ham-div span::before{
+  content: '';
+  padding: 1px;
+  width: 30px;
+  background-color: #fff;
+  position: absolute;
+  left:0;
+  top:10px;
+}
+
+.ham-div span::after{
+  content: '';
+  padding: 1px;
+  width: 30px;
+  background-color: #fff;
+  position: absolute;
+  left:0;
+  top:-10px;
+}
+
+@media (max-width: 700px) {
+  .ham-div{
+    display: flex;
+  }
+  .site-navbar ul{
+    display: block;
+    position: absolute;
+    background-color: var(--primary);
+    z-index: 100;
+    width: 100%;
+    top:63.75px;
+    left:-100%;
+  }
+
+  .sn-items a:hover ~ .nav-underline {
+    display: none;
+  }
+
+  .sn-items a:hover{
+    background-color: var(--hover);
+  }  
+
+  .site-navbar {
+    padding: 10px;
+  }
+
+  .sn-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sn-logo h1{
+    padding-left: 10px;
+  }
+
+  .nav-underline{
+    display: none;
+  }
+  .nav-selected{
+    display: none;
+  }
+
+  .nav-btn .site-btn-dark{
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}

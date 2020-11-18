@@ -1,0 +1,15 @@
+.register-form{
+    width:40%;
+    margin:40px auto;
+    box-shadow: 0 0 10px var(--primary);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+@media(max-width:1000px){
+    .register-form{
+        width: 95%;
+        box-shadow: none;
+        border:1px solid var(--lightGray);
+    }
+}

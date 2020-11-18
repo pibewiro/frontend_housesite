@@ -1,0 +1,2 @@
+export const SET_COORDINATES = "SET_COORDINATES";
+export const SET_VIEWPORT = "SET_VIEWPORT";
